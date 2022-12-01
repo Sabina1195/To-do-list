@@ -1,7 +1,7 @@
 const deleteIcon=document.querySelector(".task svg");
 const taskMain=document.querySelector(".task-main")
 deleteIcon.addEventListener("click",function (){
-        this.target.parentElement.remove()
+        this.parentElement.remove()
     })
 
 const addButton=document.querySelector("button")
@@ -18,7 +18,7 @@ addButton.addEventListener("click", function(){
         <path d="M6 14L14 6" stroke="#C4C4C4"/>
         </svg>`
         taskMain.append(tasks)
-        const lastTaskSvg=document.querySelector(".task-main .task:last-child")
+        const lastTaskSvg=document.querySelector(".task-main .task:last-child svg")
         lastTaskSvg.addEventListener("click",function(){
             this.parentElement.remove()
         })

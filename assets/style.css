@@ -26,7 +26,8 @@ h1{
 .task-main{
     border: 1px solid #C4C4C4;
     width: 286px; 
-    max-height: 200px;  
+    max-height: 200px; 
+    min-height: 40px; 
     border-radius:10px;
     margin: 0 auto;
 }
@@ -38,16 +39,17 @@ h1{
 }
 
 p{
-    width: 230px;
+    width: 220px;
     height: 30px;
-    margin-top:-1px;
+    margin:10px 3px 0 8px;
+    outline: none;
 }
 .task svg:hover * {
 fill:#833AE0;
 }
 .task svg{
     display:inline-block;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .downArrow svg:hover * , .upArrow svg:hover *{
